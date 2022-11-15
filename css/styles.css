@@ -3947,7 +3947,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   color: #f4623a;
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
