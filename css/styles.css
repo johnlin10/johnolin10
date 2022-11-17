@@ -97,10 +97,6 @@ hr {
   opacity: 0.25;
 }
 
-hr:not([size]) {
-  height: 1px;
-}
-
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -2736,6 +2732,7 @@ textarea.form-control-lg {
 .input-group > .form-select:focus {
   z-index: 3;
 }
+
 .input-group .btn {
   position: relative;
   z-index: 2;
@@ -2976,7 +2973,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  border-radius: 0;
+  border-radius: 10px 0 10px 0;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4394,6 +4391,7 @@ textarea.form-control-lg {
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -11001,7 +10999,6 @@ body {
 }
 
 hr {
-  background-color: #dee2e6;
   opacity: 1;
 }
 
@@ -11242,6 +11239,7 @@ header.masthead .site-heading .h1 {
 .post-view > .post-meta {
   font-size: 1.125rem;
   margin-top: 0;
+  margin-bottom: 0;
   color: #84929a;
 }
 .post-preview > .post-meta > a {
@@ -11253,7 +11251,44 @@ header.masthead .site-heading .h1 {
   }
 }
 
+.view-title {
+  font-size: 2.6rem;
+  color: #00404e;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hr {
+  height: 1px;
+  background-color: #dee2e6;
+  border-radius: 0.5px;
+}
+
+.title-hr {
+  width: 10%;
+  margin-left: 45%;
+  margin-bottom: 20px;
+  color: #005061;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.post-title-view {
+  color: #005061;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.post-meta-view {
+  color: #007891;
+  width: 90%;
+  margin-left: 5%;
+}
 
 .post-view{
   background-color: #e6f3f6;
+  margin-left: 2%;
+  border-radius: 10px;
+  width: 96%;
 }
