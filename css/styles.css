@@ -11220,6 +11220,7 @@ header.masthead .site-heading .h1 {
 .post-preview > a {
   color: #212529;
 }
+
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
   color: #0085A1;
@@ -11238,6 +11239,11 @@ header.masthead .site-heading .h1 {
   margin-top: 0;
   color: #84929a;
 }
+.post-view > .post-meta {
+  font-size: 1.125rem;
+  margin-top: 0;
+  color: #84929a;
+}
 .post-preview > .post-meta > a {
   text-decoration: none;
 }
@@ -11245,4 +11251,10 @@ header.masthead .site-heading .h1 {
   .post-preview > a > .post-title {
     font-size: 2.25rem;
   }
+}
+
+
+
+.post-view{
+  background-color: #e6f3f6;
 }
