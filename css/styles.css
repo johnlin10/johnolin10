@@ -2969,21 +2969,31 @@ textarea.form-control-lg {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background: linear-gradient(70deg, #0085A1, #6fff8e);
+  background-size: 300%;
+  border: 0;
   padding: 1rem 1.75rem;
   font-size: 0.875rem;
-  border-radius: 10px 0 10px 0;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px 0 15px 0;
+  transition: 0.3s;
 }
-@media (prefers-reduced-motion: reduce) {
-  .btn {
-    transition: none;
-  }
-}
+
 .btn:hover {
   color: #212529;
+  background-image: linear-gradient(90deg, #0085A1, #6fff8e);
+  background-size: 300%;
+  animation: bg-animation 4s infinite alternate;
 }
+
+@keyframes bg-animation{
+  0% {
+      background-position: left;
+  }
+  100%{
+      background-position: right;
+  }
+}
+
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(0, 133, 161, 0.25);
@@ -2995,24 +3005,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0085A1;
-  border-color: #0085A1;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #007189;
-  border-color: #006a81;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
   background-color: #007189;
-  border-color: #006a81;
   box-shadow: 0 0 0 0.25rem rgba(38, 151, 175, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #006a81;
-  border-color: #006479;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(38, 151, 175, 0.5);
@@ -3020,7 +3025,6 @@ textarea.form-control-lg {
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
   background-color: #0085A1;
-  border-color: #0085A1;
 }
 
 .btn-secondary {
@@ -11289,6 +11293,6 @@ header.masthead .site-heading .h1 {
 .post-view{
   background-color: #e6f3f6;
   margin-left: 2%;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 96%;
 }
